@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="panel panel-info">
+<div class="panel-heading">
+<a>{{blog.blogTitle}}</a>
+<b>Posted On:</b> {{blog.postedon | date:'medium'}}</br>
+<b>Posted By:</b>{{blog.postedBy.firstname}} &nbsp {{blog.postedBy.lastname}}
+</div>
+<div class="panel-body">
+<p ng-bind-html="content"></p>
+</div>
+</div>
+</body>
+</html>
