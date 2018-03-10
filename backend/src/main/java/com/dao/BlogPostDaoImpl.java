@@ -41,7 +41,7 @@ public class BlogPostDaoImpl implements BlogPostDao {
 		notification.setBlogTitle(blog.getBlogTitle());
 		notification.setApprovalStatus("Approved");
 		notification.setEmail(blog.getPostedBy().getEmail());
-		
+		session.save(notification);
 		
 	}
 	public void reject(BlogPost blog,String rejectionReason) {
