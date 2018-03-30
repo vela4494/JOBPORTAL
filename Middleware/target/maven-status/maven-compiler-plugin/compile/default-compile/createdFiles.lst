@@ -1,0 +1,7 @@
+com\controller\FriendController.class
+com\controller\ProfilePictureController.class
+com\controller\BlogPostLikesController.class
+com\controller\UserController.class
+com\controller\BlogPostController.class
+com\controller\JobController.class
+com\controller\NotificationController.class

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<ul style="list-style:none">
+<li ng-repeat="friend in friends">
+{{friend.email}}
+{{friend.firstname}} &nbsp; {{friend.lastname}}<br>
+{{friend.phonenumber}}<br>
+{{friend.role}}<br>
+<img alt="" width="50px" height="50px" src="http://localhost:9090/Middleware/getimage/{{friend.email}}">
+<hr>
+</li>
+</ul>
+</body>
+</html>

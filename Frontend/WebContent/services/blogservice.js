@@ -31,6 +31,12 @@ app.factory('BlogService',function($http){
 	blogService.updateLikes=function(id){
 		return $http.put(BASE_URL+"/updatelikes/"+id)
 	}
+	blogService.addComment=function(blogComment){
+		return $http.post(BASE_URL+"/addcomment", blogComment)
+	}
+	blogService.getBlogComments=function(id){
+		return $http.get(BASE_URL+"/blogcomments/"+id)
+	}
 	
 	return blogService;
 	

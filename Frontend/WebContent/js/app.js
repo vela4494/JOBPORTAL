@@ -40,6 +40,9 @@ app.config(function($routeProvider){
 		templateUrl:'views/blogsapproved.html',
 		controller:'BlogCtrl'
 	} )
+	.when('/profilepic',{
+		templateUrl:'views/uploadprofilepic.html'
+	})
 	.when('/getblog/:id',{
 		templateUrl:'views/blogdetails.html',
 		controller:'BlogDetailsCtrl'
@@ -52,12 +55,29 @@ app.config(function($routeProvider){
 		templateUrl:'views/notificationdetails.html',
 		controller:'NotificationCtrl'
 	} )
+	.when('/suggestedusers',{
+		templateUrl:'views/suggestedusers.html',
+		controller:'FriendCtrl'
+	} )
 	.when('/home',{
 		templateUrl:'views/home.html',
 		controller:'NotificationCtrl'
 	} )
+	.when('/pendingrequests',{
+		templateUrl:'views/pendingrequests.html',
+		controller:'FriendCtrl'
+	} )
+	.when('/friends',{
+		templateUrl:'views/friendList.html',
+		controller:'FriendCtrl'
+	} )
+	.when('/chat',{
+		templateUrl:'views/chat.html',
+		controller:'ChatCtrl'
+	} )
 	.otherwise({
-		templateUrl:'views/home.html'
+		templateUrl:'views/home.html',
+		controller:'NotificationCtrl'	
 	})
 } )
 app.run(function($location,$rootScope,$cookieStore,UserService){

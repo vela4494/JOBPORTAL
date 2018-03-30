@@ -48,7 +48,8 @@ private UserDao userDao;
 			return new ResponseEntity<ErrorClazz>(error, HttpStatus.UNAUTHORIZED);
 		}
 		else
-		{ System.out.println("enter to login");
+			{ 
+			System.out.println("enter to login");
 			ValidUser.setOnline(true);
 		    userDao.update(ValidUser);
 			session.setAttribute("currentuser", user.getEmail());
